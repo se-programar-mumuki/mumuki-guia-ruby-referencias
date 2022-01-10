@@ -1,0 +1,20 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Jor
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Luchi
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Fideos
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Jor
+  inspection: DeclaresComputationWithArity0:picantear!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Luchi
+  inspection: DeclaresComputationWithArity2:suavizar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Intransitive:Luchi
+  inspection: Calls:descartar_la_salsa!

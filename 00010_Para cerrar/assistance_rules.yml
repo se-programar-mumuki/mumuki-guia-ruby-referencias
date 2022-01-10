@@ -1,0 +1,31 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_tests_failed:
+    - Si Jor picantea su plato y Luchi luego suaviza en 3 ajíes, los Fideos no quedan
+      picantes
+  then: recordá que los `Fideos` están picantes si tiene más de dos ajíes
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    only_these_tests_failed:
+    - Luchi no descarta la salsa cuando tiene 10 ajíes
+    - Si Jor picantea su plato dos veces y Luchi luego suaviza en 1 ají, los Fideos
+      quedan picantes
+  then: "`Luchi` solo descarta la salsa si tiene más de 10 ajíes"
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - Jor DeclaresComputationWithArity0:picantear!
+  then: "`Jor` siempre agrega 5 ajíes a su plato del día cuando picantea, no recibe
+    los valores como argumento"
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - Luchi DeclaresComputationWithArity2:suavizar!
+  then: "`Luchi` necesita saber que comida suavizar y cuántos ajíes sacarle"
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - Luchi Calls:descartar_la_salsa!
+  then: recordá que `Luchi` es quien se encarga de descartar la salsa

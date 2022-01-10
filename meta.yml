@@ -1,0 +1,21 @@
+---
+name: Referencias
+locale: es
+type: learning
+beta: false
+teacher_info: ''
+language: ruby
+id_format: "%05d"
+order:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 11
+- 9
+- 10
+private: false
